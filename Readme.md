@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Николай Сутчев](https://up.htmlacademy.ru/adaptive/19/user/1220355).
-* Наставник: `Неизвестно`.
+* Наставник: [Лиза Пак](https://htmlacademy.ru/profile/lizzy).
 
 ---
 
