@@ -7,11 +7,9 @@
   <body>
 
     <header class="header">
-      <a class="header__logo" href="#">
-        <img class="header__logo-image" src="https://via.placeholder.com/150x150" alt="">
-      </a>
+      <img class="header__logo-image" src="https://via.placeholder.com/150x150" alt="">
+      <button class="header__toggle" type="button"></button>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="catalog.html">Каталог товаров</a>
@@ -43,10 +41,10 @@
         </li>
       </ul>
       <section class="product">
-        <h3 class="product__product-title">Вязанные корзинки</h3>
-        <p class="product__product-week">Товар недели</p>
-        <p class="product__product-properties">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
-        <table class="product__product-charact">
+        <h3 class="product__title">Вязанные корзинки</h3>
+        <p class="product__week">Товар недели</p>
+        <p class="product__properties">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+        <table class="product__charact">
           <tr>
             <td class="product__prop">Цвет:</td>
             <td class="product__value">«Тиффани»/серый</td>
@@ -63,7 +61,7 @@
         <img class="product__logo" src="https://via.placeholder.com/150x150" alt="">
         <div class="product__buy">
           <p class="product__price">Цена: 990 руб.</p>
-          <a href="" class="product_offer-btn button">Заказать</a>
+          <a href="" class="product__offer-btn button">Заказать</a>
         </div>
       </section>
       <section class="about">
@@ -79,8 +77,8 @@
       </section>
     </main>
 
-    <footer class="index-footer">
-      <ul class="index-footer__list social-list">
+    <footer class="footer">
+      <ul class="footer__list social-list">
         <li class="social-list__item">
           <a class="social-list__link">instagram</a>
         </li>
@@ -91,9 +89,9 @@
           <a class="social-list__link">twitter</a>
         </li>
       </ul>
-      <div class="index-footer__dev dev">
+      <div class="footer__dev dev">
         <a href="" class="dev__link">
-          <b class="dev__text">Разработано</b>
+          <p class="dev__text">Разработано</p>
         </a>
       </div>
     </footer>
