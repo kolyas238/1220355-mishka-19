@@ -80,7 +80,8 @@
       <div class="prod">
         <h2 class="prod__title">Процесс производства</h2>
         <div class="prod__media">
-          <img class="prod__media-content" src="https://via.placeholder.com/150x150"></img>
+          <img class="prod__media-content" src="https://via.placeholder.com/150x150">
+          <button class="prod__play" type="button" aria-label="кнопка старта видео"></button>
         </div>
         <p class="prod__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a class="prod__btn btn" href="#">Сделать заказ</a>
@@ -100,24 +101,24 @@
         </li>
       </ul>
       <div class="footer__dev dev">
-        <a href="">Разработано</a>
+        <a href="" class="dev__link">Разработано</a>
       </div>
     </footer>
-    <form class="popup" action="https://via.placeholder.com/150x150">
+    <form class="popup" action="https://echo.htmlacademy.ru/courses">
       <h3 class="popup__title">Добавить в корзину</h3>
       <fieldset class="popup__field">
         <ul class="popup__list">
           <legend class="popup__legend">Выберите размер:</legend>
           <li class="popup__row">
-            <input class="popup__input-checkbox" id="s" type="checkbox" name="small">
+            <input class="popup__input popup__input--checkbox" id="s" type="checkbox" name="small">
             <label class="popup__label" for="s">s</label>
           </li>
           <li class="popup__row">
-            <input class="popup__input-checkbox" id="m" type="checkbox" name="medium">
+            <input class="popup__input popup__input--checkbox" id="m" type="checkbox" name="medium">
             <label class="popup__label" for="m">m</label>
           </li>
           <li class="popup__row">
-            <input class="popup__input-checkbox" id="l" type="checkbox" name="large">
+            <input class="popup__input popup__input--checkbox" id="l" type="checkbox" name="large">
             <label class="popup__label" for="l">l</label>
           </li>
         </ul>
