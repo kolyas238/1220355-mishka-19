@@ -37,7 +37,7 @@
         <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="catalog__list article-list">
           <li class="article-list__item">
-            <article class="article-list__card product-card">
+            <article class="product-card">
               <a class="product-card__link" href="#">
                 <img class="product-card__item-logo" src="https://via.placeholder.com/150x150" alt="">
               </a>
@@ -46,11 +46,11 @@
               </a>
               <p class="product-card__desc">Рост 30 см, вес 200 г</p>
               <b class="product-card__price">1200 руб.</b>
-              <button type="button" class="product-card__button"></button>
+              <button aria-label="Добавить в корзину" type="button" class="product-card__button"></button>
             </article>
           </li>
           <li class="article-list__item">
-            <article class="article-list__card product-card">
+            <article class="product-card">
               <a class="product-card__link" href="#">
                 <img class="product-card__item-logo" src="https://via.placeholder.com/150x150" alt="">
               </a>
@@ -59,11 +59,11 @@
               </a>
               <p class="product-card__desc">Диаметр 15 см, высота 10 см</p>
               <b class="product-card__price">690 руб.</b>
-              <button type="button" class="product-card__button"></button>
+              <button aria-label="Добавить в корзину" type="button" class="product-card__button"></button>
             </article>
           </li>
           <li class="article-list__item">
-            <article class="article-list__card product-card">
+            <article class="product-card">
               <a class="product-card__link" href="#">
                 <img class="product-card__item-logo" src="https://via.placeholder.com/150x150" alt="">
               </a>
@@ -72,11 +72,19 @@
               </a>
               <p class="product-card__desc">Диаметр 10 см, высота 10 см</p>
               <b class="product-card__price">1500 руб.</b>
-              <button type="button" class="product-card__button"></button>
+              <button aria-label="Добавить в корзину" type="button" class="product-card__button"></button>
             </article>
           </li>
         </ul>
       </section>
+      <div class="prod">
+        <h2 class="prod__title">Процесс производства</h2>
+        <div class="prod__media">
+          <img class="prod__media-content" src="https://via.placeholder.com/150x150"></img>
+        </div>
+        <p class="prod__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="prod__btn btn" href="#">Сделать заказ</a>
+      </div>
     </main>
 
     <footer class="footer">
@@ -92,11 +100,30 @@
         </li>
       </ul>
       <div class="footer__dev dev">
-        <a href="" class="dev__link">
-          <p class="dev__text">Разработано</p>
-        </a>
+        <a href="">Разработано</a>
       </div>
     </footer>
+    <form class="popup" action="https://via.placeholder.com/150x150">
+      <h3 class="popup__title">Добавить в корзину</h3>
+      <fieldset class="popup__field">
+        <ul class="popup__list">
+          <legend class="popup__legend">Выберите размер:</legend>
+          <li class="popup__row">
+            <input class="popup__input-checkbox" id="s" type="checkbox" name="small">
+            <label class="popup__label" for="s">s</label>
+          </li>
+          <li class="popup__row">
+            <input class="popup__input-checkbox" id="m" type="checkbox" name="medium">
+            <label class="popup__label" for="m">m</label>
+          </li>
+          <li class="popup__row">
+            <input class="popup__input-checkbox" id="l" type="checkbox" name="large">
+            <label class="popup__label" for="l">l</label>
+          </li>
+        </ul>
+      </fieldset>
+      <input class="popup__submit" type="submit" name="add-to-cart" value="добавить">
+    </form>
 
   </body>
 </html>
