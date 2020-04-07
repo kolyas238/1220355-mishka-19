@@ -6,12 +6,12 @@
   text-align: left;
   padding: 30px;
   padding-top: 13px;
+}
 
-  fieldset {
-    margin: 0;
-    padding: 0;
-    border: none;
-  }
+.order__field {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .order__input--radio,
@@ -28,7 +28,7 @@
   display: block;
 }
 
-.order__field-type {
+.order__field--type {
   min-height: 170px;
 }
 
@@ -48,7 +48,7 @@
   min-height: 61px;
 }
 
-.order__field-name {
+.order__field--name {
   .order__legend {
     padding-top: 19px;
   }
@@ -61,16 +61,24 @@
   .order__row {
     min-height: 92px;
   }
-
-  .order__input {
-    width: 260px;
-    height: 48px;
-    border: none;
-    border-bottom: 2px solid @black;
-  }
 }
 
-.order__field-contacts {
+.order__input--wide {
+  width: 260px;
+  height: 48px;
+  border: none;
+  border-bottom: 2px solid @black;
+}
+
+.order__input--text {
+    margin-top: 18px;
+    min-height: 118px;
+    width: 237px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.order__field--contacts {
   .order__list {
     padding: 0;
     padding-top: 9px;
@@ -81,24 +89,8 @@
     margin-bottom: 7px;
   }
 
-  .order__input {
-    border: none;
-    border-bottom: 2px solid @black;
-    width: 260px;
-    height: 48px;
-  }
-
   .order__row {
     min-height: 107px;
-  }
-
-  .order__input--text {
-
-    margin-top: 16px;
-    padding: 10px;
-    height: 118px;
-    width: 237px;
-    border: 2px solid @black;
   }
 
   .order__info {
@@ -110,9 +102,5 @@
     margin: 0;
     padding-top: 15px;
     margin-bottom: 30px;
-  }
-
-  .order__submit {
-    margin-bottom: -13px;
   }
 }
