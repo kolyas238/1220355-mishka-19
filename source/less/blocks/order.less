@@ -1,0 +1,118 @@
+.order {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+  color: @black;
+  text-align: left;
+  padding: 30px;
+  padding-top: 13px;
+
+  fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+}
+
+.order__input--radio,
+.order__input--checkbox {
+  visibility: hidden;
+}
+
+.order__legend {
+  color: @green;
+  text-transform: uppercase;
+}
+
+.order__label {
+  display: block;
+}
+
+.order__field-type {
+  min-height: 170px;
+}
+
+.order__list {
+  .ls-none();
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 62px;
+  padding-top: 14px;
+}
+
+
+.order__row--color,
+.order__row--type {
+  width: 200px;
+  min-height: 61px;
+}
+
+.order__field-name {
+  .order__legend {
+    padding-top: 19px;
+  }
+
+  .order__list {
+    padding-top: 27px;
+    padding-left: 0;
+  }
+
+  .order__row {
+    min-height: 92px;
+  }
+
+  .order__input {
+    width: 260px;
+    height: 48px;
+    border: none;
+    border-bottom: 2px solid @black;
+  }
+}
+
+.order__field-contacts {
+  .order__list {
+    padding: 0;
+    padding-top: 9px;
+  }
+
+  .order__legend {
+    display: block;
+    margin-bottom: 7px;
+  }
+
+  .order__input {
+    border: none;
+    border-bottom: 2px solid @black;
+    width: 260px;
+    height: 48px;
+  }
+
+  .order__row {
+    min-height: 107px;
+  }
+
+  .order__input--text {
+
+    margin-top: 16px;
+    padding: 10px;
+    height: 118px;
+    width: 237px;
+    border: 2px solid @black;
+  }
+
+  .order__info {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 16px;
+    color: @grey-text;
+    text-align: left;
+    margin: 0;
+    padding-top: 15px;
+    margin-bottom: 30px;
+  }
+
+  .order__submit {
+    margin-bottom: -13px;
+  }
+}
