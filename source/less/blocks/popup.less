@@ -7,6 +7,11 @@
   box-sizing: border-box;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
   border: solid 1px #c6c6c6;
+
+  @media (min-width: @tablet) {
+    min-width: 566px;
+    min-height: 336px;
+  }
 }
 
 .popup__field {
@@ -41,6 +46,11 @@
   .ls-none();
 
   margin-bottom: 31px;
+
+  @media (min-width: @tablet) {
+    width: 350px;
+    margin: 0 auto;
+  }
 }
 
 .popup__label {
@@ -55,6 +65,10 @@
   line-height: 16px;
   color: @grey-text;
   text-align: center;
+
+  @media (min-width: @tablet) {
+    width: 112px;
+  }
 }
 
 .popup__input--checkbox {

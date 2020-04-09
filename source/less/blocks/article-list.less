@@ -4,6 +4,19 @@
   flex-wrap: wrap;
   padding: 30px;
   padding-bottom: 15px;
+
+  @media (min-width: @tablet) {
+    width: 668px;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop) {
+    width: 1050px;
+    min-height: 660px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .article-list__item {
@@ -14,4 +27,8 @@
 
 .article-list__item:last-child {
   margin-bottom: 0;
+
+  @media (min-width: @desktop) {
+    margin-bottom: 30px;
+  }
 }

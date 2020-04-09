@@ -1,5 +1,15 @@
 .site-list {
   .ls-none();
+
+  @media (min-width: @tablet) {
+    width: 475px;
+    display: flex;
+    order: 3;
+  }
+
+  @media (min-width: @desktop) {
+    flex-wrap: wrap;
+  }
 }
 
 .site-list__item {
@@ -16,5 +26,26 @@
   a {
     text-decoration: none;
     color: @black;
+  }
+
+  @media (min-width: @desktop) {
+    width: 236px;
+    padding-left: 10px;
+  }
+}
+
+.site-list__link {
+  @media (min-width: @tablet) {
+    display: none;
+  }
+}
+
+.site-list__item--hidden {
+  @media (min-width: 100px) {
+    display: none;
+  }
+
+  @media (min-width: @desktop) {
+    display: block;
   }
 }

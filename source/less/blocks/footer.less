@@ -4,13 +4,28 @@
   background-color: @grey--light;
   margin-top: 38px;
 
-  .footer__list {
+  @media (min-width: @tablet) {
+    width: @tablet;
+    min-height: 145px;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    .ls-none();
-    padding: 25px 45px 27px 45px;
-    background-color: inherit;
+  }
+
+  @media (min-width: @desktop) {
+    width: @desktop;
+  }
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  .ls-none();
+  padding: 25px 45px 27px 45px;
+  background-color: inherit;
+
+  @media (min-width: @tablet) {
+    width: 180px;
+    margin: 0 auto;
   }
 }
 

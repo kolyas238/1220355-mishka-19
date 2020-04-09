@@ -22,14 +22,22 @@
           <li class="site-list__item">
             <a href="form.html">Вязание на заказ</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Поиск по сайту</a>
+          <li class="site-list__item site-list__item--hidden">
+            <a href="#">Новые поступления</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Корзина: пока пуста</a>
+          <li class="site-list__item site-list__item--hidden">
+            <a href="#">Распродажа</a>
           </li>
         </ul>
       </nav>
+      <ul class="header__list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Поиск по сайту</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
     </header>
 
     <main class="main">
@@ -39,34 +47,36 @@
       </div>
       <ul class="category-list">
         <li class="category-list__item">
-          <a href="">Предметы интерьера</a>
+          <a class="category-list__link" href="">Предметы интерьера</a>
         </li>
         <li class="category-list__item category-list__item--dark">
-          <a href="">Детские игрушки</a>
+          <a class="category-list__link" href="">Детские игрушки</a>
         </li>
       </ul>
       <section class="product">
         <h3 class="product__title">Вязанные корзинки</h3>
         <p class="product__week">Товар недели</p>
-        <p class="product__properties">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
-        <table class="product__charact">
-          <tr>
-            <td class="product__prop">Цвет:</td>
-            <td class="product__value">«Тиффани»/серый</td>
-          </tr>
-          <tr>
-            <td class="product__prop">Диаметр:</td>
-            <td class="product__value">25 см</td>
-          </tr>
-          <tr>
-            <td class="product__prop">Высота:</td>
-            <td class="product__value">15 см</td>
-          </tr>
-        </table>
-        <img class="product__logo" src="img/triple-set-mobile@1x.jpg" alt="Набор из трех корзинок">
-        <div class="product__buy">
-          <p class="product__price">Цена: 990 руб.</p>
-          <a class="product__offer-btn btn" href="#">Заказать</a>
+        <div class="product-wrap">
+          <p class="product__properties">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+          <table class="product__charact">
+            <tr>
+              <td class="product__prop">Цвет:</td>
+              <td class="product__value">«Тиффани»/серый</td>
+            </tr>
+            <tr>
+              <td class="product__prop">Диаметр:</td>
+              <td class="product__value">25 см</td>
+            </tr>
+            <tr>
+              <td class="product__prop">Высота:</td>
+              <td class="product__value">15 см</td>
+            </tr>
+          </table>
+          <img class="product__logo" src="img/triple-set-mobile@1x.jpg" alt="Набор из трех корзинок">
+          <div class="product__buy">
+            <p class="product__price">Цена: 990 руб.</p>
+            <a class="product__offer-btn btn" href="#">Заказать</a>
+          </div>
         </div>
       </section>
       <section class="about">
@@ -134,7 +144,6 @@
                 </g>
               </g>
             </svg>
-
           </a>
         </li>
         <li class="social-list__item">

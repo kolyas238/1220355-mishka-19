@@ -2,6 +2,16 @@
   width: 260px;
   height: 373px;
 
+  @media (min-width: @tablet) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop) {
+    flex-direction: column;
+    width: 315px;
+  }
+
   .product-card__link {
     display: contents;
     min-width: 260px;

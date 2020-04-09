@@ -5,6 +5,17 @@
   box-sizing: border-box;
   position: relative;
 
+  @media (min-width: @tablet) {
+    width: @tablet;
+    display: flex;
+    flex-wrap: wrap;
+    height: 90px;
+  }
+
+  @media (min-width: @desktop) {
+    width: @desktop;
+  }
+
   .header__logo {
     display: block;
     margin: auto;
@@ -13,6 +24,16 @@
     text-align: center;
     padding-top: 22px;
     box-sizing: border-box;
+
+    @media (min-width: @tablet) {
+      order: 1;
+    }
+
+    @media (min-width: @desktop) {
+      width: 372px;
+      order: 1;
+      margin-top: 0;
+    }
   }
 
   .header__toggle {
@@ -22,5 +43,22 @@
     left: 268px;
     border: none;
     background-color: transparent;
+
+    @media (min-width: @tablet) {
+      display: none;
+    }
+  }
+
+  .header__list {
+    .ls-none();
+
+    @media (min-width: @tablet) {
+      display: flex;
+      order: 1;
+    }
+
+    @media (min-width: @desktop) {
+      width: 265px;
+    }
   }
 }
