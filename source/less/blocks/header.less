@@ -1,9 +1,8 @@
 .header {
-  margin: 0 auto;
-  width: 320px;
-  background-color: @white;
-  box-sizing: border-box;
-  position: relative;
+  @media (min-width: 320px) {
+    width: 100%;
+    border-bottom: 1px solid @grey--light;
+  }
 
   .header__logo {
     display: block;
@@ -13,6 +12,17 @@
     text-align: center;
     padding-top: 22px;
     box-sizing: border-box;
+
+    @media (min-width: @tablet) {
+      order: 1;
+      margin-left: 0;
+    }
+
+    @media (min-width: @desktop) {
+      order: 1;
+      margin: 0 auto 0 40px;
+      align-self: flex-start;
+    }
   }
 
   .header__toggle {
@@ -22,5 +32,30 @@
     left: 268px;
     border: none;
     background-color: transparent;
+
+    @media (min-width: @tablet) {
+      display: none;
+    }
+  }
+
+  .header__wrap {
+    margin: 0 auto;
+    width: 320px;
+    background-color: @white;
+    box-sizing: border-box;
+    position: relative;
+
+    @media (min-width: @tablet) {
+      width: 668px;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: -102px;
+      background-color: transparent;
+    }
+
+    @media (min-width: @desktop) {
+      width: 1050px;
+      margin-bottom: -79px;
+    }
   }
 }

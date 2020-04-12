@@ -2,10 +2,27 @@
 
   .ls-none();
 
-  .about-us-list__item {
-    min-height: 23px;
-    padding-top: 83px;
+  @media (min-width: @tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    height: 450px;
+    flex-direction: column;
+  }
+}
 
-    .about-ls();
+.about-us-list__item {
+  min-height: 23px;
+  padding-top: 83px;
+
+  .about-ls();
+
+  @media (min-width: @tablet) {
+    width: 304px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 350px;
+
+    .about-desktop();
   }
 }

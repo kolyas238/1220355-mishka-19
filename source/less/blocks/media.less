@@ -1,6 +1,15 @@
 .media {
   border: 1px solid @grey--light;
   box-sizing: border-box;
+
+  @media (min-width: @tablet) {
+    margin: 0 auto;
+    width: 668px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 1050px;
+  }
 }
 
 .media__title {

@@ -1,18 +1,18 @@
-.site-list {
+.user-list {
   .ls-none();
 
   @media (min-width: @tablet) {
-    width: 475px;
     display: flex;
-    order: 3;
+    order: 1;
   }
 
   @media (min-width: @desktop) {
-    flex-wrap: wrap;
+    width: 265px;
+    align-self: flex-start;
   }
 }
 
-.site-list__item {
+.user-list__item {
   padding: 27px 20px 27px 80px;
   box-sizing: border-box;
   min-height: 79px;
@@ -33,17 +33,13 @@
   }
 
   @media (min-width: @desktop) {
-    width: 236px;
+    padding: 0;
     padding-left: 10px;
   }
 }
 
-.site-list__item--hidden {
-  @media (min-width: 100px) {
+.user-list__link {
+  @media (min-width: @tablet) {
     display: none;
-  }
-
-  @media (min-width: @desktop) {
-    display: block;
   }
 }

@@ -1,4 +1,13 @@
 .main-nav {
   display: block;
-  width: 320px;
+  min-width: 320px;
+
+  @media (min-width: @tablet) {
+    order: 2;
+  }
+
+  @media (min-width: @desktop) {
+    order: 0;
+    background-color: transparent;
+  }
 }
