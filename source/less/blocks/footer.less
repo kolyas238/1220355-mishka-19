@@ -1,17 +1,7 @@
 .footer {
-  width: 320px;
-  margin: 0 auto;
-  background-color: @grey--light;
-  margin-top: 38px;
-
-  @media (min-width: @tablet) {
-    width: @tablet;
-    min-height: 145px;
-    display: flex;
-  }
-
-  @media (min-width: @desktop) {
-    width: @desktop;
+  @media (min-width: 320px) {
+    width: 100%;
+    background-color: @grey--light;
   }
 }
 
@@ -31,4 +21,28 @@
 
 .footer--form {
   margin-top: 25px;
+}
+
+.footer__wrap {
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 38px;
+
+  @media (min-width: @tablet) {
+    width: @tablet;
+    min-height: 145px;
+    display: flex;
+  }
+
+  @media (min-width: @desktop) {
+    width: @desktop;
+  }
+}
+
+.footer__link {
+  display: none;
+
+  @media (min-width: @tablet) {
+    display: block;
+  }
 }
