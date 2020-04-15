@@ -1,7 +1,15 @@
 .page-desc {
   margin: 0;
   padding: 29px 48px 10px 30px;
-  width: 242px;
 
   .p-desc();
+
+  @media (min-width: @tablet) {
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop) {
+    width: 700px;
+  }
 }
