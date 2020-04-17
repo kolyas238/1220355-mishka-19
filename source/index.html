@@ -101,32 +101,38 @@
         <h3 class="reviews__title">Отзывы</h3>
         <article class="reviews__review review">
           <blockquote class="review__body">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</blockquote>
-          <p class="review__cust">Анастасия Красильникова</p>
-          <p class="review__cust-email">@misssssiskras</p>
         </article>
-        <button class="reviews__arrow-left arrow-btn" type="button" name="left" aria-label="слайд влево"></button>
-        <button class="reviews__arrow-right arrow-btn" type="button" name="right" aria-label="слайд вправо"></button>
-        <a class="reviews_feedback-btn btn"  href="#">Написать</a>
+        <div class="reviews__wrap">
+          <p class="reviews__cust">Анастасия Красильникова</p>
+          <p class="reviews__cust-email">@misssssiskras</p>
+        </div>
+        <div class="reviews__arrows-wrap">
+          <button class="reviews__arrow-btn reviews__arrow-btn--left" type="button" name="left" aria-label="слайд влево"></button>
+          <button class="reviews__arrow-btn reviews__arrow-btn--right" type="button" name="right" aria-label="слайд вправо"></button>
+        </div>
+        <a class="reviews__feedback-btn btn"  href="#">Написать</a>
       </section>
       <section class="contacts">
-        <h3 class="contacts__title">Контакты</h3>
-        <address class="contacts__address">
+          <h3 class="contacts__title">Контакты</h3>
+        <address class="contacts__info">
           <table class="contacts__table">
-            <tr>
-              <td class="contacts__email">e-mail:</td>
-              <td class="contacts__email-address">info@mimimishkashop.ru</td>
-            </tr>
-            <tr>
-              <td class="contacts__address">адрес:</td>
-              <td class="contacts__ph-address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-            </tr>
+            <tbody class="contacts__body">
+              <tr class="contacts__row">
+                <td class="contacts__email">e-mail:</td>
+                <td class="contacts__email-address">info@mimimishkashop.ru</td>
+              </tr>
+              <tr class="contacts__row">
+                <td class="contacts__address">адрес:</td>
+                <td class="contacts__ph-address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+              </tr>
+            </tbody>
           </table>
         </address>
+        <div class="contacts__map">
+          <img class="contacts__map-logo" src="img/map-mobile@1x.jpg" alt="Схема проезда">
+        </div>
+        <a class="contacts__btn btn" href="">Напишите нам</a>
       </section>
-      <div class="map">
-        <img class="map__map" src="img/map-mobile@1x.jpg" alt="Схема проезда">
-        <a class="map__btn btn" href="">Напишите нам</a>
-      </div>
     </main>
 
     <footer class="footer">
