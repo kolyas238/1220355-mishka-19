@@ -54,81 +54,87 @@
       <p class="page-desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="order" action="https://echo.htmlacademy.ru/courses">
         <fieldset class="order__field order__field--type">
-          <legend class="order__legend">Тип</legend>
-          <ul class="order__list order__list--type">
-            <li class="order__row order__row--type">
-              <input class="order__input order__input--radio" type="radio" name="radiobutton" value="accesories" id="accesories" checked>
-              <label class="order__label" for="accesories">Аксессуар для интерьера</label>
-            </li>
-            <li class="order__row order__row--type">
-              <input class="order__input order__input--radio" type="radio" name="radiobutton" value="toys" id="toy">
-              <label class="order__label" for="toy">Детская игрушка</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="order__field order__field--color">
-          <legend class="order__legend">Цвет</legend>
-          <ul class="order__list order__list--color">
-            <li class="order__row order__row--color">
-              <input class="order__input order__input--checkbox" type="checkbox" name="white" id="white" checked>
-              <label class="order__label" for="white">Белый</label>
-            </li>
-            <li class="order__row order__row--color">
-              <input class="order__input order__input--checkbox" type="checkbox" name="grey" id="grey" checked>
-              <label class="order__label" for="grey">Серый</label>
-            </li>
-            <li class="order__row order__row--color">
-              <input class="order__input order__input--checkbox" type="checkbox" name="tiffany" id="tiffany">
-              <label class="order__label" for="tiffany">«Тиффани»</label>
-            </li>
-            <li class="order__row order__row--color">
-              <input class="order__input order__input--checkbox" type="checkbox" name="black" id="black">
-              <label class="order__label" for="black">Черный</label>
-            </li>
-            <li class="order__row order__row--color">
-              <input class="order__input order__input--checkbox" type="checkbox" name="pink" id="orange">
-              <label class="order__label" for="orange">Розовый</label>
-            </li>
-            <li class="order__row order__row--color">
-              <input class="order__input order__input--checkbox" type="checkbox" name="orange" id="pink">
-              <label class="order__label" for="pink">Оранжевый</label>
-            </li>
-          </ul>
-          </fieldset>
-          <fieldset class="order__field order__field--name">
-            <legend class="order__legend">Фио</legend>
-            <ul class="order__list order__list--name">
-              <li class="order__row order__row--name">
-                <label class="order__label order__label--name" for="name">Имя:</label>
-                <input class="order__input order__input--wide" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+          <div class="order__field-wrapper">
+            <span class="order__legend">ТИП</span>
+            <ul class="order__list order__list--type">
+              <li class="order__row order__row--type">
+                <input class="order__input order__input--radio" type="radio" name="radiobutton" value="accesories" id="accesories" checked>
+                <label class="order__label" for="accesories">Аксессуар для интерьера</label>
               </li>
-              <li class="order__row order__row--name">
-                <label class="order__label order__label--name" for="surname">Фамилия:</label>
-                <input class="order__input order__input--wide" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
-              </li>
-              <li class="order__row order__row--name">
-                <label class="order__label order__label--name" for="middle_name">Отчество:</label>
-                <input class="order__input order__input--wide" type="text" name="middle_name" id="middle_name" placeholder="Отчество, если желаете">
+              <li class="order__row order__row--type">
+                <input class="order__input order__input--radio" type="radio" name="radiobutton" value="toys" id="toy">
+                <label class="order__label" for="toy">Детская игрушка</label>
               </li>
             </ul>
+          </div>
+        </fieldset>
+        <fieldset class="order__field order__field--color">
+          <div class="order__field-wrapper">
+            <span class="order__legend">ЦВЕТ</span>
+            <ul class="order__list order__list--color">
+              <li class="order__row order__row--color">
+                <input class="order__input order__input--checkbox" type="checkbox" name="white" id="white" checked>
+                <label class="order__label" for="white">Белый</label>
+              </li>
+              <li class="order__row order__row--color">
+                <input class="order__input order__input--checkbox" type="checkbox" name="grey" id="grey" checked>
+                <label class="order__label" for="grey">Серый</label>
+              </li>
+              <li class="order__row order__row--color">
+                <input class="order__input order__input--checkbox" type="checkbox" name="tiffany" id="tiffany">
+                <label class="order__label" for="tiffany">«Тиффани»</label>
+              </li>
+              <li class="order__row order__row--color">
+                <input class="order__input order__input--checkbox" type="checkbox" name="black" id="black">
+                <label class="order__label" for="black">Черный</label>
+              </li>
+              <li class="order__row order__row--color">
+                <input class="order__input order__input--checkbox" type="checkbox" name="pink" id="orange">
+                <label class="order__label" for="orange">Розовый</label>
+              </li>
+              <li class="order__row order__row--color">
+                <input class="order__input order__input--checkbox" type="checkbox" name="orange" id="pink">
+                <label class="order__label" for="pink">Оранжевый</label>
+              </li>
+            </ul>
+          </div>
+          </fieldset>
+          <fieldset class="order__field order__field--name">
+            <div class="order__field-wrapper">
+              <span class="order__legend">ФИО</span>
+              <ul class="order__list order__list--name">
+                  <li class="order__row order__row--name">
+                    <label class="order__label order__label--name" for="name">Имя:</label>
+                    <input class="order__input order__input--wide" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+                  </li>
+                  <li class="order__row order__row--name">
+                    <label class="order__label order__label--name" for="surname">Фамилия:</label>
+                    <input class="order__input order__input--wide" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+                  </li>
+                  <li class="order__row order__row--name">
+                    <label class="order__label order__label--name" for="middle_name">Отчество:</label>
+                    <input class="order__input order__input--wide" type="text" name="middle_name" id="middle_name" placeholder="Отчество, если желаете">
+                  </li>
+                </ul>
+            </div>
           </fieldset>
           <fieldset class="order__field order__field--contacts">
             <legend class="order__legend-contacts visually-hidden">контакты</legend>
             <ul class="order__list order__list--contacts">
               <li class="order__row order__row--contacts order__row--bg">
-                <div class="order__contacts--wrap">
+                <div class="order__contacts order__contacts--wrap">
                   <label class="order__legend order__legend--inline" for="tel">Тел</label>
                   <input class="order__input order__input--wide order__input--contacts" type="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="^+7d{3}d{7}$" maxlength="12" required>
                 </div>
               </li>
               <li class="order__row order__row--contacts order__row--bg">
-                <div class="order__contacts--wrap">
+                <div class="order__contacts order__contacts--wrap">
                   <label class="order__legend order__legend--inline" for="email">E-mail</label>
                   <input class="order__input order__input--wide order__input--contacts" type="email" id="email" placeholder="Ваш Email*" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
                 </div>
               </li>
               <li class="order__row order__row--contacts order__row--text">
-                <div class="order__contacts--wrap">
+                <div class="order__contacts order__contacts--wrap">
                   <label class="order__legend order__legend--inline order__legend--text" for="add">Доп</label>
                   <textarea class="order__input order__input--text order__input--contacts" id="add" placeholder="Опишите все ваши пожелания к заказу" rows="6"></textarea>
                 </div>
