@@ -1,32 +1,43 @@
 .contacts {
+  @media (min-width: @tablet) {
+    padding-top: 143px;
+  }
+
   @media (min-width: @desktop) {
     display: flex;
     flex-direction: column;
     position: relative;
     width: 1050px;
     margin: 0 auto;
+    padding-top: 133px;
+    margin-bottom: 104px;
   }
 }
 
 .contacts__title {
   margin: 0;
-  margin-top: 40px;
+  margin-top: 71px;
+  padding: 0 28px;
 
   .contacts-title();
 
   @media (min-width: @tablet) {
     margin: 0 auto;
-    width: 668px;
+    width: 675px;
+
+    .tablet-title();
   }
 
   @media (min-width: @desktop) {
     width: 400px;
-    margin-left: 150px;
+    margin-left: 142px;
+
+    .desktop-title();
   }
 }
 
 .contacts__info {
-  padding: 30px;
+  padding: 0 16px;
 
   @media (min-width: @tablet) {
     width: 668px;
@@ -35,17 +46,28 @@
 
   @media (min-width: @desktop) {
     width: 400px;
-    margin-left: 150px;
+    margin-left: 157px;
+    margin-top: 20px;
   }
 }
 
 .contacts__table {
-  margin-top: 26px;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 13px 26px;
   font-style: normal;
   line-height: 30px;
 
   .product-properties();
+
+  @media (min-width: @tablet) {
+    .review-cust-email();
+
+    border-spacing: 0 23px;
+  }
+
+  @media (min-width: @desktop) {
+    border-spacing: 0 14px;
+  }
 
   .contacts__email {
     width: 74px;
@@ -72,8 +94,12 @@
   }
 
   .contacts__ph-address {
-    height: 126px;
+    height: 130px;
     vertical-align: baseline;
+
+    @media (min-width: @tablet) {
+      height: 101px;
+    }
   }
 }
 
@@ -86,8 +112,8 @@
 .contacts__map {
   @media (min-width: @desktop) {
     position: absolute;
-    top: 0;
-    right: 10%;
+    top: 62px;
+    right: 0;
   }
 }
 
@@ -98,15 +124,21 @@
   }
 
   @media (min-width: @desktop) {
-    width: 350px;
-    height: 350px;
+    width: 526px;
+    height: 457px;
   }
 }
 
 .contacts__btn {
   margin-top: 35px;
 
+  @media (min-width: @tablet) {
+    margin-top: 51px;
+    width: 230px;
+  }
+
   @media (min-width: @desktop) {
-    margin-left: 150px;
+    margin-left: 175px;
+    margin-top: 38px;
   }
 }

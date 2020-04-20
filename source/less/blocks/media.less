@@ -19,28 +19,30 @@
 
 .media__title {
   .review-cust();
-  margin: 29px 41px 26px 91px;
+  margin: 23px 41px 26px 88px;
   width: 130px;
 
   @media (min-width: @tablet) {
+    font-size: 20px;
     order: 2;
-    width: 90%;
+    width: 69%;
     margin: auto;
+    margin-bottom: 32px;
   }
 
   @media (min-width: @desktop) {
-    margin: 0;
-    margin-left: auto;
+    margin: 95px 50px 31px 760px;
     width: 230px;
   }
 }
 
 .media__media {
-  margin-bottom: 34px;
+  margin-bottom: 24px;
   position: relative;
   box-sizing: border-box;
 
   @media (min-width: @tablet) {
+    margin-bottom: 36px;
     order: 1;
   }
 
@@ -53,8 +55,17 @@
 
 .media__media-content {
   position: relative;
-  width: 680px;
-  height: 454px;
+  width: 100%;
+  height: auto;
+
+  @media (min-width: @tablet) {
+    width: 668px;
+    height: 453px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 681px;
+  }
 }
 
 .media__play {
@@ -72,34 +83,40 @@
   }
 
   @media (min-width: @desktop) {
-    margin-left: auto;
+    margin-left: 720px;
   }
 }
 
 .media__desc {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 24px;
   padding-left: 34px;
-  padding-right: 43px;
-  width: 183px;
+  padding-right: 40px;
 
   .p-desc();
 
   @media (min-width: @tablet) {
-    width: 90%;
+    width: 88%;
+    font-size: 15px;
+    line-height: 30px;
+    padding-left: 39px;
+    margin-bottom: 35px;
   }
 
   @media (min-width: @desktop) {
     width: 230px;
+    margin-bottom: 47px;
   }
 }
 
 .media__btn {
-  width: 192px;
-  margin: 0 34px 33px 34px;
+  width: 75%;
+  margin-bottom: 33px;
 
   @media (min-width: @tablet) {
-    width: 90%;
+    width: 88%;
+    margin-left: 41px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: @desktop) {

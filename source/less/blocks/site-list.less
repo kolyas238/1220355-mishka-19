@@ -9,11 +9,12 @@
 
   @media (min-width: @desktop) {
     flex-wrap: wrap;
+    width: 404px;
+    justify-content: space-between;
   }
 }
 
 .site-list__item {
-  padding: 27px 20px 27px 80px;
   box-sizing: border-box;
   min-height: 79px;
   text-align: left;
@@ -28,14 +29,28 @@
     color: @black;
   }
 
+  @media (max-width: 767px) {
+    padding: 27px 10% 20px 23.75%;
+    text-align: left;
+  }
+
   @media (min-width: @tablet) {
     box-shadow: none;
+    padding: 20px 23px 20px 0;
+    letter-spacing: -1px;
+    width: 166px;
+    box-sizing: border-box;
   }
 
   @media (min-width: @desktop) {
-    width: 236px;
-    padding-left: 10px;
+    width: 185px;
+    padding-top: 31px;
+    min-height: 77px;
   }
+}
+
+.site-list__item:first-child {
+  border-right: 1px solid @grey--light;
 }
 
 .site-list__item--hidden {

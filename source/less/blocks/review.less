@@ -1,17 +1,31 @@
 .review {
   .review__body {
     margin: 0;
-    margin-bottom: 26px;
+    margin-bottom: 27px;
     line-height: 30px;
 
     .product-properties();
+
+    @media (min-width: @tablet) {
+      margin-bottom: 60px;
+      padding-left: 4px;
+      font-size: 17px;
+    }
+
+    @media (min-width: @desktop) {
+      margin-bottom: 39px;
+    }
   }
 
   .review__cust {
     margin: 0;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
 
     .review-cust();
+
+    @media (min-width: @tablet) {
+      width: 300px;
+    }
   }
 
   .review__cust-email {

@@ -4,6 +4,10 @@
     border-bottom: 1px solid @grey--light;
   }
 
+  @media (min-width: @tablet) {
+    min-height: 88px;
+  }
+
   .header__logo {
     display: block;
     margin: auto;
@@ -15,7 +19,10 @@
 
     @media (min-width: @tablet) {
       order: 1;
-      margin-left: 0;
+      margin: 0;
+      width: auto;
+      flex-grow: 1;
+      text-align: left;
     }
 
     @media (min-width: @desktop) {
@@ -29,7 +36,7 @@
     display: block;
     position: absolute;
     top: 32px;
-    left: 268px;
+    right: 31px;
     border: none;
     background-color: transparent;
 
@@ -40,7 +47,6 @@
 
   .header__wrap {
     margin: 0 auto;
-    width: 320px;
     background-color: @white;
     box-sizing: border-box;
     position: relative;
@@ -57,5 +63,11 @@
       width: 1050px;
       margin-bottom: -79px;
     }
+  }
+}
+
+.close {
+  @media (max-width: 767px) {
+    display: none;
   }
 }

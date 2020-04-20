@@ -9,11 +9,28 @@
 
   @media (min-width: @tablet) {
     width: 700px;
+    padding: 73px 12px;
+    padding-bottom: 48px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 49px 0;
+    width: 705px;
+    letter-spacing: -0.04em;
   }
 
   .about__title {
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 
     .title();
+
+    @media (min-width: @tablet) {
+      .tablet-title();
+      margin-bottom: 19px;
+    }
+
+    @media (min-width: @desktop) {
+      .desktop-title();
+    }
   }
 }
