@@ -1,5 +1,5 @@
 .product-card {
-  @media (min-width: 320px) {
+  @media (min-width: @mobile-width) {
     min-height: 373px;
   }
 
@@ -16,7 +16,7 @@
   }
 
   .product-card__link {
-    min-width: 260px;
+    min-width: 50%;
     min-height: 195px;
     background-color: @grey--light;
   }
@@ -27,7 +27,7 @@
   width: 100%;
 
   @media (min-width: @tablet) {
-    width: 334px;
+    width: 100%;
     min-height: 334px;
   }
 
@@ -41,7 +41,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 177px;
   padding: 25px 27px;
   margin: auto;
   box-sizing: border-box;
@@ -49,13 +48,12 @@
 
   @media (min-width: @tablet) {
     width: 335px;
-    min-height: 334px;
     margin: 0;
+    flex-grow: 1;
   }
 
   @media (min-width: @desktop) {
     width: 315px;
-    min-height: 197px;
   }
 }
 

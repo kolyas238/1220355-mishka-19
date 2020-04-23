@@ -1,5 +1,5 @@
 .header {
-  @media (min-width: 320px) {
+  @media (min-width: @mobile-width) {
     width: 100%;
     border-bottom: 1px solid @grey--light;
   }
@@ -52,7 +52,7 @@
     position: relative;
 
     @media (min-width: @tablet) {
-      width: 668px;
+      width: 87%;
       display: flex;
       flex-wrap: wrap;
       margin-bottom: -102px;
@@ -64,6 +64,30 @@
       margin-bottom: -79px;
     }
   }
+}
+
+.header__delivery-link {
+  display: none;
+
+  @media (min-width: @tablet) {
+    text-decoration: none;
+    display: block;
+    order: 3;
+    margin-left: auto;
+    font-size: 15px;
+    line-height: 24px;
+    color: @grey-text;
+    padding-top: 19px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-top: -52px;
+    padding-top: 4px;
+  }
+}
+
+.header__delivery {
+  margin: 0;
 }
 
 .close {

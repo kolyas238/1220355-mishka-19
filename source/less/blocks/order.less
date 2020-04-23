@@ -4,14 +4,19 @@
   line-height: 18px;
   color: @black;
   text-align: left;
-  padding: 30px;
-  padding-top: 13px;
+  padding: 13px 30px 16px;
+  margin-bottom: 38px;
 
   @media (min-width: @tablet) {
     display: flex;
     flex-direction: column;
     padding: 0;
     font-size: 19px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 48px;
   }
 }
 
@@ -299,7 +304,7 @@
 
 .order__text-wrap {
   @media (min-width: @tablet) {
-    width: 86%;
+    width: 87%;
     order: 3;
     display: flex;
     margin: 0 auto;
@@ -327,6 +332,8 @@
     font-size: 17px;
     line-height: 30px;
     padding-top: 9px;
+    margin: 0;
+    width: 302px;
   }
 }
 

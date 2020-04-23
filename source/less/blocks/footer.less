@@ -1,5 +1,5 @@
 .footer {
-  @media (min-width: 320px) {
+  @media (min-width: @mobile-width) {
     width: 100%;
     background-color: @grey--light;
   }
@@ -10,17 +10,15 @@
 }
 
 .footer__wrap {
-  width: 320px;
+  width: @mobile-width;
   margin: 0 auto;
-  margin-top: 27px;
 
   @media (min-width: @tablet) {
-    width: 668px;
+    width: 87%;
     align-items: center;
     justify-content: space-evenly;
     min-height: 145px;
     display: flex;
-    margin-top: 33px;
   }
 
   @media (min-width: @desktop) {

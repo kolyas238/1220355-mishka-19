@@ -2,7 +2,6 @@
   .ls-none();
 
   @media (min-width: @tablet) {
-    width: 475px;
     display: flex;
     order: 3;
   }
@@ -22,7 +21,6 @@
   font-weight: bold;
   line-height: 24px;
   color: @black;
-  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
 
   a {
     text-decoration: none;
@@ -32,6 +30,7 @@
   @media (max-width: 767px) {
     padding: 27px 10% 20px 23.75%;
     text-align: left;
+    border-top: 1px solid @popup-grey;
   }
 
   @media (min-width: @tablet) {
@@ -50,7 +49,9 @@
 }
 
 .site-list__item:first-child {
-  border-right: 1px solid @grey--light;
+  @media (min-width: @desktop) {
+    border-right: 1px solid @grey--light;
+  }
 }
 
 .site-list__item--hidden {
