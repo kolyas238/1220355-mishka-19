@@ -2,15 +2,33 @@
   margin: 0 30px 0 30px;
   border-top: 1px solid #e2e2e2;
 
+  @media (min-width: @tablet) {
+    width: 33%;
+    margin: 0;
+    border: none;
+  }
+
+  @media (min-width: @desktop) {
+    width: 39%;
+  }
+
   .dev__link {
     display: flex;
     align-items: center;
-    justify-content: center;
-    min-height: 79px;
+    justify-content: space-between;
+    padding: 18px 38px 24px;
     text-decoration: none;
     font-size: 19px;
     font-weight: bold;
     line-height: 18px;
     color: @black;
+
+    @media (min-width: @tablet) {
+      padding: 10px 0 10px 38px;
+    }
+
+    @media (min-width: @desktop) {
+      padding-left: 224px;
+    }
   }
 }

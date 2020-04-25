@@ -4,13 +4,19 @@
   line-height: 18px;
   color: @black;
   text-align: left;
-  padding: 30px;
-  padding-top: 13px;
+  padding: 13px 30px 16px;
+  margin-bottom: 38px;
 
   @media (min-width: @tablet) {
     display: flex;
     flex-direction: column;
     padding: 0;
+    font-size: 19px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 48px;
   }
 }
 
@@ -28,6 +34,37 @@
 .order__legend {
   color: @green;
   text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    font-size: 17px;
+    line-height: 16px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 16px 10px 10px 62px;
+  }
+}
+
+.order__legend--type {
+  @media (min-width: @tablet) {
+    padding-top: 63px;
+  }
+
+  @media (min-width: @desktop) {
+    padding-top: 64px;
+    padding-left: 64px;
+  }
+}
+
+.order__legend--color {
+  @media (min-width: @tablet) {
+    padding-top: 33px;
+  }
+
+  @media (min-width: @desktop) {
+    padding-top: 33px;
+    padding-left: 60px;
+  }
 }
 
 .order__label {
@@ -70,17 +107,30 @@
     flex-wrap: wrap;
     flex-direction: row;
   }
+
+  @media (min-width: @desktop) {
+    width: 872px;
+    margin-right: 0;
+  }
 }
 
 .order__list--contacts {
   @media (min-width: @tablet) {
     width: 100%;
     margin: 0;
+    padding-top: 9px;
   }
 
   @media (min-width: @desktop) {
     width: 100%;
     margin: 0;
+  }
+}
+
+.order__list--type {
+  @media (min-width: @tablet) {
+    padding-top: 44px;
+    padding-bottom: 30px;
   }
 }
 
@@ -90,8 +140,9 @@
 
   @media (min-width: @tablet) {
     width: 50%;
-    padding-left: 60px;
+    padding-left: 79px;
     box-sizing: border-box;
+    min-height: 75px;
   }
 
   @media (min-width: @desktop) {
@@ -99,16 +150,15 @@
   }
 }
 
-.order__row--type {
-  @media (min-width: @tablet) {
-    width: 60%;
+.order__row--color:nth-child(even) {
+  @media (min-width: @tablet) and (max-width: 1149px) {
+    padding-left: 93px;
   }
 }
 
-.order__row--name {
+.order__row--type {
   @media (min-width: @tablet) {
-    display: flex;
-    align-items: baseline;
+    width: 67%;
   }
 }
 
@@ -140,21 +190,48 @@
 .order__field--color {
   @media (min-width: @tablet) {
     background-color: @grey--light;
+    padding-top: 34px;
+    padding-bottom: 31px;
   }
 }
 
 .order__field--name {
-  .order__legend {
-    padding-top: 19px;
+  padding-top: 19px;
+
+  @media (min-width: @tablet) {
+    padding-bottom: 15px;
+  }
+}
+
+.order__legend--name {
+  padding-top: 19px;
+
+  @media (min-width: @tablet) {
+    padding-top: 47px;
   }
 
-  .order__list {
-    padding-top: 27px;
-    padding-left: 0;
+  @media (min-width: @desktop) {
+    padding-left: 61px;
+    padding-top: 46px;
   }
+}
 
-  .order__row {
-    min-height: 92px;
+.order__list--name {
+  padding-top: 27px;
+  padding-left: 0;
+
+  @media (min-width: @tablet) {
+    padding-top: 30px;
+  }
+}
+
+.order__row--name {
+  min-height: 92px;
+
+  @media (min-width: @tablet) {
+    min-height: 77px;
+    display: flex;
+    align-items: baseline;
   }
 }
 
@@ -167,7 +244,7 @@
 
 .order__input--text {
   margin-top: 18px;
-  min-height: 118px;
+  min-height: 141px;
   width: 100%;
   box-sizing: border-box;
   border: 2px solid black;
@@ -208,6 +285,10 @@
       order: 1;
       margin-right: auto;
     }
+
+    @media (min-width: @desktop) {
+      padding-top: 34px;
+    }
   }
 
   .order__legend--inline {
@@ -223,7 +304,7 @@
 
 .order__text-wrap {
   @media (min-width: @tablet) {
-    width: 86%;
+    width: 87%;
     order: 3;
     display: flex;
     margin: 0 auto;
@@ -232,6 +313,7 @@
 
   @media (min-width: @desktop) {
     width: 700px;
+    margin-top: 35px;
   }
 }
 
@@ -247,6 +329,11 @@
 
   @media (min-width: @tablet) {
     order: 2;
+    font-size: 17px;
+    line-height: 30px;
+    padding-top: 9px;
+    margin: 0;
+    width: 302px;
   }
 }
 
@@ -254,6 +341,7 @@
   @media (min-width: @tablet) {
     margin-left: 0;
     order: 1;
+    width: 230px;
   }
 }
 
@@ -263,6 +351,7 @@
     width: 86%;
     margin: 0 auto;
     justify-content: space-between;
+    align-items: baseline;
   }
 
   @media (min-width: @desktop) {
@@ -279,5 +368,25 @@
 
   @media (min-width: @desktop) {
     width: 1050px;
+  }
+}
+
+.order__contacts--tel {
+  @media (min-width: @tablet) {
+    padding-top: 50px;
+  }
+}
+
+.order__contacts--mail {
+  @media (min-width: @tablet) {
+    padding-top: 19px;
+    padding-bottom: 50px;
+  }
+}
+
+.order__contacts--text {
+  @media (min-width: @tablet) {
+    padding-top: 32px;
+    padding-bottom: 14px;
   }
 }
