@@ -95,3 +95,22 @@
     display: none;
   }
 }
+
+.user-list__item .user-list__cart path,
+.user-list__item .user-list__search path {
+  fill: #cccccc;
+}
+
+.user-list__item:hover .user-list__cart path,
+.user-list__item:hover .user-list__search path {
+  fill: #63d1bb;
+}
+
+.user-list__item:hover .user-list__link-cart {
+  color: #666666;
+}
+
+.user-list__item:active .user-list__link-cart,
+.user-list__item:active .user-list__link--search {
+  opacity: 0.3;
+}

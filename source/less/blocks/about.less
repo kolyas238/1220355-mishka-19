@@ -1,18 +1,25 @@
 .about {
   padding: 42px 30px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: 56px 35px;
+  background-size: 319px;
 
   @media (min-width: @tablet) {
-    width: 91%;
     padding: 73px 12px;
     padding-bottom: 48px;
     margin: 0 auto;
     box-sizing: border-box;
+    background-position: -20px 49px;
+    background-size: 770px;
   }
 
   @media (min-width: @desktop) {
     padding: 98px 0 52px;
-    width: 705px;
+    width: 1050px;
     letter-spacing: -0.04em;
+    background-position: -26px 70px;
+    background-size: 1050px;
   }
 
   .about__title {
@@ -23,10 +30,12 @@
     @media (min-width: @tablet) {
       .tablet-title();
       margin-bottom: 19px;
+      padding: 0 33px;
     }
 
     @media (min-width: @desktop) {
       .desktop-title();
+      padding: 0 172px;
     }
   }
 }
