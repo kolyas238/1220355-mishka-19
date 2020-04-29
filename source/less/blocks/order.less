@@ -409,6 +409,13 @@
 .order__label--checkbox::before {
   content: "";
   position: absolute;
+
+  @media (max-width: @mobile-width-only) {
+    width: 36px;
+    height: 36px;
+    left: -62px;
+    top: -9px;
+  }
   left: -81px;
   top: -18px;
   width: 50px;
@@ -419,6 +426,13 @@
 .order__input--checkbox:checked + .order__label--checkbox::after {
   content: "";
   position: absolute;
+
+  @media (max-width: @mobile-width-only) {
+    width: 19px;
+    height: 8px;
+    top: 4px;
+    left: -52px;
+  }
   left: -69px;
   top: -4px;
   width: 28px;
@@ -432,6 +446,13 @@
 .order__label--radio::before {
   content: "";
   position: absolute;
+
+  @media (max-width: @mobile-width-only) {
+    left: -62px;
+    top: -10px;
+    width: 36px;
+    height: 36px;
+  }
   left: -79px;
   top: -17px;
   width: 50px;
@@ -443,6 +464,13 @@
 .order__input--radio:checked + .order__label--radio::after {
   content: "";
   position: absolute;
+
+  @media (max-width: @mobile-width-only) {
+    width: 16px;
+    height: 16px;
+    left: -50px;
+    top: 2px;
+  }
   left: -62px;
   top: -1px;
   display: block;
