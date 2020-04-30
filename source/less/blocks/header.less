@@ -70,6 +70,7 @@
       flex-wrap: wrap;
       margin-bottom: -102px;
       background-color: transparent;
+      z-index: 1;
     }
 
     @media (min-width: @desktop) {
@@ -104,7 +105,15 @@
 }
 
 .close {
-  @media (max-width: 767px) {
+  @media (max-width: @mobile-width-only) {
     display: none;
   }
+}
+
+.header__logo[href]:hover {
+  opacity: 0.6;
+}
+
+.header__logo[href]:active {
+  opacity: 0.3;
 }

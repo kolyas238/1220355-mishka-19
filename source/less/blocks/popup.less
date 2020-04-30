@@ -49,7 +49,7 @@
 
   @media (min-width: @tablet) {
     width: 350px;
-    margin: 0 auto;
+    margin: 0 auto 31px;
   }
 }
 
@@ -59,7 +59,7 @@
   display: block;
   width: 82px;
   height: 52px;
-  border: 1px solid @popup-grey;
+  border: 2px solid @popup-grey;
   font-size: 17px;
   font-weight: bold;
   line-height: 16px;
@@ -73,4 +73,32 @@
 
 .popup__input--checkbox {
   opacity: 0;
+}
+
+.popup__input--checkbox:hover + label {
+  border-color: rgba(68, 68, 68, 0.3);
+}
+
+.popup__input--checkbox:checked + label {
+  border-color: @green--dark;
+}
+
+.popup_hide {
+  display: none;
+}
+
+.popup-wrap {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 5;
+  top: 0;
+
+  .popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

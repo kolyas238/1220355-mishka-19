@@ -19,9 +19,8 @@
   @media (min-width: @desktop) {
     width: 1050px;
     margin: 0 auto;
-    margin-bottom: 100px;
     box-sizing: border-box;
-    padding: 74px 0 62px 91px;
+    padding: 74px 0 100px 91px;
   }
 }
 
@@ -54,7 +53,7 @@
   }
 
   @media (min-width: @desktop) {
-    bottom: 95px;
+    bottom: 131px;
     right: 0;
   }
 }
@@ -68,6 +67,7 @@
   border: 1px solid @grey--light;
   background-color: transparent;
   box-sizing: border-box;
+  cursor: pointer;
 
   @media (min-width: @tablet) {
     margin-bottom: 0;
@@ -100,4 +100,12 @@
   @media (min-width: @desktop) {
     margin-top: 8px;
   }
+}
+
+.reviews__arrow-btn:hover {
+  opacity: 0.6;
+}
+
+.reviews__arrow-btn:active {
+  opacity: 0.3;
 }
