@@ -48,12 +48,15 @@
 
   @media (min-width: @tablet) {
     width: 335px;
+    min-width: 335px;
     margin: 0;
     flex-grow: 1;
   }
 
   @media (min-width: @desktop) {
     width: 315px;
+    min-width: auto;
+    min-height: 197px;
   }
 }
 
@@ -119,7 +122,7 @@
   cursor: pointer;
 
   @media (min-width: @tablet) {
-    padding: 0 6px;
+    padding: 0 2px;
   }
 }
 
@@ -143,10 +146,17 @@
   color: rgba(0, 0, 0, 0.3);
 }
 
-.product-card__button:hover path {
-  fill: @green;
+.product-card__button-icon {
+  width: 25px;
+  height: 20px;
+  opacity: 0.2;
 }
 
-.product-card__button:active path {
+.product-card__button:hover .product-card__button-icon {
+  fill: @green;
+  opacity: 1;
+}
+
+.product-card__button:active .product-card__button-icon {
   fill: rgba(99, 209, 187, 0.3);
 }

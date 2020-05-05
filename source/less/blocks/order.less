@@ -295,6 +295,7 @@
   .order__legend--inline {
     @media (min-width: @tablet) {
       display: inline-block;
+      width: 104px;
     }
   }
 
@@ -373,12 +374,16 @@
 }
 
 .order__contacts--tel {
+  position: relative;
+
   @media (min-width: @tablet) {
     padding-top: 50px;
   }
 }
 
 .order__contacts--mail {
+  position: relative;
+
   @media (min-width: @tablet) {
     padding-top: 19px;
     padding-bottom: 50px;
@@ -480,6 +485,57 @@
   height: 21px;
   background-color: @green--dark;
   border-radius: 50%;
+}
+
+.order__icon--tel {
+  opacity: 0.2;
+  position: absolute;
+  top: 32px;
+  right: 9px;
+  width: 23px;
+  height: 29px;
+
+  @media (min-width: @tablet) {
+    top: 58px;
+    right: 23px;
+  }
+
+  @media (min-width: @desktop) {
+    top: 57px;
+    right: 184px;
+  }
+}
+
+.order__icon--mail {
+  opacity: 0.2;
+  position: absolute;
+  top: 36px;
+  right: 5px;
+  width: 31px;
+  height: 29px;
+
+  @media (min-width: @tablet) {
+    top: 31px;
+    right: 19px;
+  }
+
+  @media (min-width: @desktop) {
+    top: 29px;
+    right: 179px;
+  }
+}
+
+.order__input:hover + .order__icon--tel,
+.order__input:hover + .order__icon--mail,
+.order__input:focus + .order__icon--tel,
+.order__input:focus + .order__icon--mail {
+  fill: @green--dark;
+  opacity: 1;
+}
+
+.order__icon--tel,
+.order__icon--mail {
+  opacity: 0.2;
 }
 
 .order__label--checkbox:hover::before,

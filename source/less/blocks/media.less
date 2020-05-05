@@ -1,6 +1,7 @@
 .media {
   border: 1px solid @grey--light;
   box-sizing: border-box;
+  position: relative;
 
   @media (min-width: @tablet) {
     margin: 0 auto;
@@ -12,7 +13,6 @@
   @media (min-width: @desktop) {
     width: 1050px;
     flex-wrap: wrap;
-    position: relative;
     min-height: 455px;
   }
 }
@@ -139,4 +139,31 @@
 .media__play:active {
   transform: scale(0.8);
   opacity: 0.3;
+}
+
+.media__icon {
+  position: absolute;
+  top: 31px;
+  left: 32px;
+  width: 34px;
+  height: 30px;
+  fill: @green;
+
+  @media (min-width: @tablet) {
+    top: auto;
+    bottom: 30%;
+    left: 6%;
+  }
+
+  @media (min-width: @desktop) {
+    top: 41px;
+    right: 254px;
+    left: auto;
+    bottom: auto;
+  }
+}
+
+.media__play-icon {
+  width: 100px;
+  height: 78px;
 }
