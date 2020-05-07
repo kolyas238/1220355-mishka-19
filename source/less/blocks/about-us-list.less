@@ -17,15 +17,20 @@
 }
 
 .about-us-list__item {
-  min-height: 23px;
-  padding-top: 26px;
+  min-height: 96px;
+  padding-top: 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
 
   .about-ls();
 
   @media (min-width: @tablet) {
     width: 304px;
-    min-height: 122px;
-    padding-top: 24px;
+    min-height: 126px;
+    padding-top: 28px;
+    justify-content: flex-start;
 
     .about-desktop();
   }
@@ -40,86 +45,5 @@
 .about-us-list__icon {
   display: block;
   fill: @green;
-}
-
-.about-us-list__icon--flower {
-  width: 49px;
-  height: 36px;
-  margin-top: 5px;
-  margin-bottom: 18px;
-
-  @media (min-width: @tablet) {
-    width: 53px;
-  }
-}
-
-.about-us-list__icon--money {
-  width: 45px;
-  height: 25px;
-  margin-left: 1px;
-  margin-bottom: 28px;
-
-  @media (min-width: @tablet) {
-    height: 46px;
-    margin-left: 4px;
-    margin-top: 5px;
-    margin-bottom: 18px;
-  }
-}
-
-.about-us-list__icon--heart {
-  width: 32px;
-  height: 33px;
-  display: block;
-  margin-left: 8px;
-  margin-top: 6px;
-  margin-bottom: 19px;
-
-  @media (min-width: @tablet) {
-    width: 34px;
-    height: 51px;
-    margin-left: 10px;
-    margin-top: 15px;
-    margin-bottom: 9px;
-  }
-}
-
-.about-us-list__icon--ball {
-  width: 34px;
-  height: 33px;
-  margin-left: 4px;
-  margin-top: 6px;
-  margin-bottom: 17px;
-
-  @media (min-width: @tablet) {
-    height: 35px;
-    margin-top: 7px;
-  }
-}
-
-.about-us-list__icon--rocket {
-  width: 50px;
-  height: 25px;
-  margin-left: 0;
-  margin-top: 8px;
-  margin-bottom: 27px;
-
-  @media (min-width: @tablet) {
-    height: 46px;
-    margin-top: 5px;
-    margin-bottom: 18px;
-  }
-}
-
-.about-us-list__icon--gift {
-  width: 33px;
-  height: 34px;
-  margin-left: 3px;
-  margin-top: 4px;
-  margin-bottom: 19px;
-
-  @media (min-width: @tablet) {
-    margin-top: 22px;
-    margin-bottom: 18px;
-  }
+  margin-bottom: 16px;
 }

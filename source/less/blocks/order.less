@@ -241,6 +241,10 @@
   height: 48px;
   border: none;
   border-bottom: 2px solid @black;
+
+  @media (min-width: @tablet) {
+    padding-left: 15px;
+  }
 }
 
 .order__input--text {
@@ -267,6 +271,14 @@
     width: 700px;
     display: inline-block;
     margin-right: 176px;
+  }
+}
+
+.order__input--connection {
+  @media (min-width: @tablet) {
+    width: 98%;
+    background-color: transparent;
+    padding-left: 15px;
   }
 }
 
@@ -323,7 +335,7 @@
   font-size: 14px;
   font-weight: normal;
   line-height: 16px;
-  color: @grey-text;
+  color: @grey--text;
   text-align: left;
   margin: 0;
   padding-top: 15px;
@@ -496,13 +508,13 @@
   height: 29px;
 
   @media (min-width: @tablet) {
-    top: 58px;
+    top: 8px;
     right: 23px;
   }
 
   @media (min-width: @desktop) {
-    top: 57px;
-    right: 184px;
+    top: 7px;
+    right: 8px;
   }
 }
 
@@ -515,13 +527,26 @@
   height: 29px;
 
   @media (min-width: @tablet) {
-    top: 31px;
+    top: 12px;
     right: 19px;
   }
 
   @media (min-width: @desktop) {
-    top: 29px;
-    right: 179px;
+    top: 10px;
+    right: 4px;
+  }
+}
+
+.order__input-container {
+  @media (min-width: @tablet) {
+    width: 75%;
+    position: relative;
+  }
+
+  @media (min-width: @desktop) {
+    width: 700px;
+    display: inline-block;
+    margin-right: 176px;
   }
 }
 
@@ -545,12 +570,12 @@
 
 .order__label--checkbox:active::before,
 .order__label--radio:active::before {
-  border-color: @grey-text;
+  border-color: @grey--text;
   opacity: 0.3;
 }
 
 .order__row input[type="radio"]:focus + label::before,
 .order__row input[type="checkbox"]:focus + label::before {
-  outline: rgb(0, 0, 0) 1px solid;
+  outline: @black 1px solid;
   outline-offset: 5px;
 }
