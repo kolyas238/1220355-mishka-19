@@ -17,14 +17,20 @@
 }
 
 .about-us-list__item {
-  min-height: 23px;
-  padding-top: 83px;
+  min-height: 96px;
+  padding-top: 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
 
   .about-ls();
 
   @media (min-width: @tablet) {
     width: 304px;
-    min-height: 72px;
+    min-height: 126px;
+    padding-top: 28px;
+    justify-content: flex-start;
 
     .about-desktop();
   }
@@ -33,4 +39,11 @@
     width: 339px;
     letter-spacing: 0.01em;
   }
+}
+
+
+.about-us-list__icon {
+  display: block;
+  fill: @green;
+  margin-bottom: 16px;
 }

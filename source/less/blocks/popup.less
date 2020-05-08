@@ -5,7 +5,7 @@
   padding: 30px 30px 46px 30px;
   background-color: @white;
   box-sizing: border-box;
-  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  box-shadow: 0 5px 10px 0 @black--popup-shadow;
   border: solid 1px #c6c6c6;
 
   @media (min-width: @tablet) {
@@ -59,11 +59,11 @@
   display: block;
   width: 82px;
   height: 52px;
-  border: 2px solid @popup-grey;
+  border: 2px solid @grey--text-10;
   font-size: 17px;
   font-weight: bold;
   line-height: 16px;
-  color: @grey-text;
+  color: @grey--text;
   text-align: center;
 
   @media (min-width: @tablet) {
@@ -76,14 +76,14 @@
 }
 
 .popup__input--checkbox:hover + label {
-  border-color: rgba(68, 68, 68, 0.3);
+  border-color: @grey--text-30;
 }
 
 .popup__input--checkbox:checked + label {
   border-color: @green--dark;
 }
 
-.popup_hide {
+.popup-hide {
   display: none;
 }
 
@@ -91,7 +91,7 @@
   position: fixed;
   width: 100%;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: @white-90;
   z-index: 5;
   top: 0;
 
@@ -101,4 +101,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+.popup-wrap--position {
+  position: relative;
 }
