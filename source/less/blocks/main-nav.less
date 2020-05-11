@@ -1,7 +1,8 @@
 .main-nav {
-  display: block;
+  display: none;
 
   @media (min-width: @tablet) {
+    display: block;
     order: 2;
     width: 64%;
   }
@@ -11,4 +12,12 @@
     background-color: transparent;
     width: auto;
   }
+}
+
+.main-nav--nojs {
+  display: block;
+}
+
+.main-nav--active {
+  display: block;
 }

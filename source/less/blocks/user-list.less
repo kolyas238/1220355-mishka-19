@@ -1,4 +1,6 @@
 .user-list {
+  display: none;
+
   .ls-none();
 
   @media (min-width: @tablet) {
@@ -95,12 +97,6 @@
   }
 }
 
-.close {
-  @media (max-width: @mobile-width-only) {
-    display: none;
-  }
-}
-
 .user-list__item .user-list__cart,
 .user-list__item .user-list__search {
   fill: #cccccc;
@@ -118,4 +114,11 @@
 .user-list__item:active .user-list__link-cart,
 .user-list__item:active .user-list__link--search {
   opacity: 0.3;
+}
+
+.user-list--nojs,
+.user-list--active {
+  @media (max-width: @mobile-width-only) {
+    display: block;
+  }
 }
