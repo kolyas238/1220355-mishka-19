@@ -12,8 +12,8 @@ menuButton.onclick = function() {
   userList.classList.toggle('user-list--active');
 
   if (nav.classList.contains('main-nav--active')) {
-    menuButton.setAttribute("aria-label", "закрыть меню")
+    menuButton.setAttribute('aria-label', 'закрыть меню')
   } else {
-    menuButton.setAttribute("aria-label", "открыть меню")
+    menuButton.setAttribute('aria-label', 'открыть меню')
   }
 }
