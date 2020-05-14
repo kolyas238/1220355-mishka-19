@@ -5,7 +5,7 @@
   }
 
   @media (min-width: @tablet) {
-    min-height: 88px;
+    height: 88px;
   }
 
   .header__logo {
@@ -42,19 +42,6 @@
     @media (min-width: @desktop) {
       width: 149px;
       height: 72px;
-    }
-  }
-
-  .header__toggle {
-    display: block;
-    position: absolute;
-    top: 32px;
-    right: 31px;
-    border: none;
-    background-color: transparent;
-
-    @media (min-width: @tablet) {
-      display: none;
     }
   }
 
@@ -95,25 +82,89 @@
   }
 
   @media (min-width: @desktop) {
-    margin-top: -52px;
+    margin-top: -74px;
     padding-top: 4px;
   }
 }
 
 .header__delivery {
   margin: 0;
+  width: 231px;
 }
 
-.close {
-  @media (max-width: @mobile-width-only) {
-    display: none;
-  }
-}
-
-.header__logo[href]:hover {
+.header__logo[href]:hover,
+.header__logo[href]:focus {
   opacity: 0.6;
 }
 
 .header__logo[href]:active {
   opacity: 0.3;
+}
+
+.header__toggle {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  right: 20px;
+  border: none;
+  background-color: transparent;
+  padding: 0 10px;
+
+  @media (min-width: @tablet) {
+    display: none;
+  }
+}
+
+.header__toggle--nojs {
+  display: none;
+}
+
+
+.header__toggle-content {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: @black;
+}
+
+.header__toggle-content::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: @black;
+  transition: transform 0.2s linear, top 0.2s linear  0.2s;
+}
+
+.header__toggle-content::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: @black;
+  transition: transform 0.2s linear, top 0.2s linear  0.2s;
+}
+
+.header__toggle--active .header__toggle-content {
+  background-color: transparent;
+  transition: background-color 0.2s;
+}
+
+.header__toggle--active .header__toggle-content::before {
+  transform: rotate(135deg);
+  top: 50%;
+  transition: top 0.2s linear, transform 0.3s linear 0.2s;
+}
+
+.header__toggle--active .header__toggle-content::after {
+  transform: rotate(-135deg);
+  top: 50%;
+  transition: top 0.2s linear, transform 0.3s linear 0.2s;
 }

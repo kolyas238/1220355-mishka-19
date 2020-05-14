@@ -8,7 +8,7 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     position: relative;
-    padding: 79px 50px 20px 45px;
+    padding: 79px 50px 23px 45px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/review@2x.jpg");
@@ -32,6 +32,7 @@
 
   @media (min-width: @tablet) {
     order: 1;
+    width: 400px;
 
     .tablet-title();
   }
@@ -109,7 +110,8 @@
   height: 26px;
 }
 
-.reviews__arrow-btn:hover {
+.reviews__arrow-btn:hover,
+.reviews__arrow-btn:focus {
   opacity: 0.6;
 }
 

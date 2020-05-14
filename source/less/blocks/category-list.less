@@ -15,7 +15,7 @@
 }
 
 .category-list__item {
-  background-color: @green;
+  background-color: @green--light-hover;
 
   @media (min-width: @tablet) {
     width: 50%;
@@ -23,7 +23,7 @@
 }
 
 .category-list__item--dark {
-  background-color: @green--darkest;
+  background-color: @green--dark-hover;
 }
 
 .category-list__link {
@@ -38,6 +38,7 @@
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
+  background-color: @green;
 
   @media (min-width: @tablet) {
     padding: 28px 26px 24px 35px;
@@ -51,6 +52,10 @@
     padding-right: 27px;
     padding-bottom: 24px;
   }
+}
+
+.category-list__link--dark {
+  background-color: @green--darkest;
 }
 
 .category-list__text {
@@ -72,19 +77,33 @@
   }
 }
 
-.category-list__item:hover {
+.category-list__link:hover,
+.category-list__link:focus {
   margin-top: -5px;
-  padding-bottom: 5px;
-  transition: margin-top 0.2s, padding-bottom 0.2s;
-  background-color: #59d5bc;
+  min-height: 108px;
+  padding: 15px 26px 20px 29px;
+  transition: margin-top 0.2s, padding 0.2s, min-height 0.2s;
+  background-color: @green--light-hover;
+  outline: 0;
+
+  @media (min-width: @tablet) {
+    padding: 28px 26px 24px 35px;
+  }
+
+  @media (min-width: @desktop) {
+    padding-right: 27px;
+  }
 }
 
-.category-list__link:hover .category-list__item-logo {
+.category-list__link:hover .category-list__item-logo,
+.category-list__link:focus .category-list__item-logo {
   opacity: 0.7;
 }
 
-.category-list__item--dark:hover {
-  background-color: #46c1ae;
+.category-list__link--dark:hover,
+.category-list__link--dark:focus {
+  background-color: @green--dark-hover;
+  outline: none;
 }
 
 .category-list__link:active {

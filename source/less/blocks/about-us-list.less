@@ -5,8 +5,6 @@
   @media (min-width: @tablet) {
     display: flex;
     flex-wrap: wrap;
-    height: 475px;
-    flex-direction: column;
     width: 90%;
     margin: 0 auto;
   }
@@ -27,7 +25,7 @@
   .about-ls();
 
   @media (min-width: @tablet) {
-    width: 304px;
+    width: 334px;
     min-height: 126px;
     padding-top: 28px;
     justify-content: flex-start;
@@ -36,11 +34,34 @@
   }
 
   @media (min-width: @desktop) {
-    width: 339px;
+    width: 352px;
     letter-spacing: 0.01em;
   }
 }
 
+.about-us-list__item--flower {
+  order: 1;
+}
+
+.about-us-list__item--money {
+  order: 3;
+}
+
+.about-us-list__item--heart {
+  order: 5;
+}
+
+.about-us-list__item--ball {
+  order: 2;
+}
+
+.about-us-list__item--rocket {
+  order: 4;
+}
+
+.about-us-list__item--gift {
+  order: 6;
+}
 
 .about-us-list__icon {
   display: block;

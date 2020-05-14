@@ -44,7 +44,7 @@
   @media (min-width: @desktop) {
     width: 185px;
     padding-top: 31px;
-    min-height: 77px;
+    min-height: 88px;
     font-size: 17px;
   }
 }
@@ -63,6 +63,7 @@
   @media (min-width: @desktop) {
     display: block;
     font-size: 15px;
+    padding-top: 18px;
   }
 }
 
@@ -72,4 +73,8 @@
 
 .site-list__item:active a {
   color: @black--active;
+}
+
+.site-list__item a:focus {
+  color: @black--hover;
 }
