@@ -40,9 +40,8 @@
   }
 
   @media (min-width: @desktop) {
-    padding: 0;
-    padding-left: 82px;
-    padding-top: 31px;
+    min-height: 88px;
+    padding: 31px 0 15px 82px;
   }
 }
 
@@ -102,9 +101,14 @@
   fill: #cccccc;
 }
 
+.user-list__link-cart:focus .user-list__cart,
+.user-list__link:focus .user-list__search {
+  fill: @green;
+}
+
 .user-list__item:hover .user-list__cart,
 .user-list__item:hover .user-list__search {
-  fill: #63d1bb;
+  fill: @green;
 }
 
 .user-list__item:hover .user-list__link-cart {

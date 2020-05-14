@@ -5,7 +5,7 @@
   }
 
   @media (min-width: @tablet) {
-    min-height: 88px;
+    height: 88px;
   }
 
   .header__logo {
@@ -82,7 +82,7 @@
   }
 
   @media (min-width: @desktop) {
-    margin-top: -52px;
+    margin-top: -74px;
     padding-top: 4px;
   }
 }
@@ -92,13 +92,8 @@
   width: 231px;
 }
 
-.close {
-  @media (max-width: @mobile-width-only) {
-    display: none;
-  }
-}
-
-.header__logo[href]:hover {
+.header__logo[href]:hover,
+.header__logo[href]:focus {
   opacity: 0.6;
 }
 
